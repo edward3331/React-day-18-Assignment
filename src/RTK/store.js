@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { pokemonSlice } from "./slice";
+import { favoriteSlice, pokemonSlice } from "./slice";
+// import favorite from "../pages/favorite";
 
 
 export const store = configureStore({
     reducer:{
-        pokemon: pokemonSlice.reducer
+        pokemon: pokemonSlice.reducer,
+        favorite: favoriteSlice.reducer
     }
 })
